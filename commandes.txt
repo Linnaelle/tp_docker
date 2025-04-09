@@ -1,0 +1,17 @@
+> docker volume create my-volume
+> docker volume ls
+> docker volume ls -a
+> docker volume inspect my-volume
+> docker run -it --name my-container -v my-volume:/data ubuntu
+> echo "Hello, Docker Volume!" > /data/hello.txt
+> cat /data/hello.txt
+> exit
+> docker rm my-container
+> docker run -it --name new-container -v my-volume:/data ubuntu
+> cat /data/hello.txt
+> exit
+> echo 'Hello World'>index.html
+> docker run -d -p 8080:80 -v C:/Users/Clem/Desktop/Cours/Docker^et^Kubernetes/docker_repo:/usr/share/nginx/html --name persistence_container nginx:alpine
+> docker ps
+> docker rm persistence_container
+> docker run -d -p 8080:80 --name persistence_container --mount type=bind,source="C:\Users\Clem\Desktop\Cours\Docker et Kubernetes\docker_repo\myproject",target=/usr/share/nginx/html nginx:alpine
