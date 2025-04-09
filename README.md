@@ -1,2 +1,4 @@
 # tp_docker
-Repo for Docker's TP - IPSSI Highschool
+- Branch for the TP Persistence Checkoint. Volume commands present -
+
+Every commands used on the './app/commandes.txt' file
