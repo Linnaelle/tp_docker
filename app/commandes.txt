@@ -1,0 +1,24 @@
+>docker run hello-world
+>docker run -it ubuntu bash
+>docker ps -a
+>docker ps
+>docker stop c397d4f12077 [hello-world]
+>docker stop b9ee4d7ee7c0 [ubuntu]
+>docker run --name my-nginx -d -p 8080:80 Nginx
+>docker exec -it my-nginx /bin/bash
+>exit
+>docker stop b72f5889c28a [nginx]
+>docker start my-nginx
+|---- Affichage du site via l'URL Localhost ---|
+>docker exec -it my-nginx /bin/bash
+>cd /usr/share/nginx/html
+>echo "Hello, Docker!" > index.html
+>exit
+|--- TP Flask ---|
+>cd C:\Users\Clem\Desktop\Cours\Docker et Kubernetes\app
+>pip install Flask
+>docker build -t flask-app .
+>docker ps -a
+>docker run -d -p 5000:5000 --name flask-container flask-app
+>docker ps -a
+>docker stop 78704b8651a9
